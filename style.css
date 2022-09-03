@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.img-repeat {
+    background-image:url("/images/group-pets-1.png");
+    background-repeat: repeat-x;   /* repeats background horizontally */
+    background-color:blanchedalmond;
+}
