@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <title>PetSpace</title>
 </head>
 <body>
@@ -12,7 +15,7 @@
     <header>PetSpace Brand</header>
     
     <!-- Container to wrap everything -->
-    <div id="container">
+    <div class="container">
         <!-- Main navigation -->
         <nav>
             <ul>
@@ -30,14 +33,13 @@
             <p>We would love to hear from you!</p>
         
             <form action="/contact.html">
-                <!-- <fieldset> -->
-                    <!-- <legend>Personal Info</legend> -->
+                <fieldset>
                     <label for="name" class="required-field"> Full name </label><br>
-                    <input type="text" id="name"><br><br>
+                    <input type="text" id="name" required><br><br>
                     <label for="email" class="required-field">Email </label><br>
-                    <input type="email"><br><br>
+                    <input type="email" required><br><br>
                     <label for="phone" class="required-field">Phone </label><br>
-                    <input type="tel">
+                    <input type="tel" required>
                     <br><br>
 
                     <label for="contact">How should we contact you?</label><br>
@@ -47,10 +49,10 @@
                     </select>
                     <br><br>
                     <label for="message" class="required-field">Message: </label><br>
-                    <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="50" rows="10" required></textarea>
                     <br>
                     <input type="submit" value="Submit Message">
-                <!-- </fieldset> -->
+                </fieldset>
             </form>
 
         </main> <!-- End of main content -->
