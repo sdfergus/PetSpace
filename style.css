@@ -37,6 +37,15 @@ th, td {
     margin: auto;
 }
 
+.required-field::after {
+    content: "*";
+    color: red;
+}
+
+form {
+    margin: 30px 0;
+}
+
 footer {
     background-color: aliceblue;
     text-align: center;
