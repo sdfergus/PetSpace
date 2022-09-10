@@ -1,25 +1,68 @@
 body {
     margin: 0;
+    padding: 0;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Header */
 header {
-    background-color: aliceblue;
-    padding: 10px;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+
+#home header {
+    background: url(/images/group-pets-1.png) repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
+
+.main-header {
+    background-color: rgba(225, 225, 225, 0.9);
+    width: 700px;
+    margin:7em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+
+.main-header .logo img {
+    width: 100px;
+    float: left;
+}
+
+/* Navigation */
+.main-menu {
+    margin-left: 180px;
+    /* margin: auto; */
+}
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 35px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #888;
+}
+
+.main-menu ul li a:hover {
+    text-decoration: none;
+    /* color: #FF7F00; */
+    color: red;
+    font-weight: bold;
 }
 
 h1, td h2 {
     font-family: 'Bubblegum Sans', cursive;
-}
-
-ul {
-    display: flex;
-    list-style: none;
-}
-
-li {
-    padding-right: 20px;
 }
 
 th, td {
@@ -30,17 +73,6 @@ th, td {
     font-family: 'Montserrat', sans-serif; 
 }
 
-.container {
-    max-width: 80%;
-    margin: auto;
-}
-
-.img-repeat {
-    background-image:url("/images/group-pets-1.png");
-    background-repeat: repeat-x;   /* repeats background horizontally */
-    background-color:blanchedalmond;
-    height: 45vh;
-}
 
 .hero-img {
     display: flex;
