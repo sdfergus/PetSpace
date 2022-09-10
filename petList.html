@@ -10,25 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <title>PetSpace</title>
 </head>
-<body>
+<body id="petList">
     
-    <!-- Brand of website -->
-    <header>PetSpace Brand</header>
-
     <!-- Container to wrap everything -->
-    <div class="container">
-        <!-- Main navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>Find a pet</li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav> <!-- End of main nav -->
+    <div id="container">
+        <!-- Brand of website -->
+            <header>
+                <div class="main-header">
+                    <div class="logo">
+                        <img src="/images/paw-logo-4.jpg" alt="PetSpace's Logo">
+                    </div>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active"><a href="petList.html">Find a pet</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav> <!-- End of main nav -->
+                </div>
+            </header>
 
         <!-- Main content -->
         <main>
-            <img src="images/group-pets-2.jpg" alt="group of pets" width="70%" height="auto" class="hero-img">
+            <!-- <img src="images/group-pets-2.jpg" alt="group of pets" width="70%" height="auto" class="hero-img"> -->
             <hr width="50%">
             <div>
                 <h1>Happy Shopping!</h1>
@@ -52,7 +56,7 @@
                         <p>Location</p>
                     </td>
                     <td>
-                        <img src="https://placedog.net/300/300/2" alt="" alt="Dog image">
+                        <img src="https://placedog.net/300/300/2" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>

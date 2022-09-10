@@ -12,7 +12,8 @@ header {
     padding-top: 3em;
 }
 
-/*_________________ Home Page _____________*/
+/*_________________ Home + PetList + Contact Hero images _____________*/
+
 #home header {
     background: url(/images/group-pets-1.png) repeat center center;
     -webkit-background-size: contain;
@@ -20,6 +21,18 @@ header {
     -o-background-size: contain;
     background-size:contain;
 }
+
+#petList header {
+    background: url(/images/group-pets-2.jpg) repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
+
+
+
+/*_________________ Home Page _____________*/
 
 .main-header {
     background-color: rgba(225, 225, 225, 0.9);
@@ -72,17 +85,19 @@ header {
     font-weight: bold;
 }
 
+/* Logo name */
+#space-font {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/*_________________ PetList Page _____________*/
+
 h1, td h2 {
     font-family: 'Bubblegum Sans', cursive;
 }
 
 th, td {
     padding: 15px;
-}
-
-/* Logo name */
-#space-font {
-    font-family: 'Montserrat', sans-serif; 
 }
 
 .hero-img {
