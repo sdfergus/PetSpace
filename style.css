@@ -12,6 +12,12 @@ header {
     padding-top: 3em;
 }
 
+/* Main */
+main {
+    width: 1024px; 
+    margin: 0 auto;    
+}
+
 /*_________________ Home + PetList + Contact Hero images _____________*/
 
 #home header {
@@ -126,7 +132,7 @@ form label, textarea {
 
 input[type=text], input[type=email], input[type=tel], select, textarea {
     padding: 12px 20px;
-    margin: 10px 0;
+    margin-bottom: 25px;
     box-sizing: border-box;
     border: 1.5px solid #ccc;
     -webkit-transition: 0.5s;
