@@ -12,6 +12,7 @@ header {
     padding-top: 3em;
 }
 
+/*_________________ Home Page _____________*/
 #home header {
     background: url(/images/group-pets-1.png) repeat center center;
     -webkit-background-size: contain;
@@ -61,18 +62,28 @@ header {
     font-weight: bold;
 }
 
+.main-menu ul li.active {
+    background: red;
+    border: none;
+}
+
+.main-menu ul li.active a {
+    color: white;
+    font-weight: bold;
+}
+
 h1, td h2 {
     font-family: 'Bubblegum Sans', cursive;
 }
 
 th, td {
     padding: 15px;
-  }
+}
 
+/* Logo name */
 #space-font {
     font-family: 'Montserrat', sans-serif; 
 }
-
 
 .hero-img {
     display: flex;
