@@ -30,7 +30,13 @@ header {
     background-size:contain;
 }
 
-
+#contact header {
+    background: url(/images/group-pets-3.jpg) repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
 
 /*_________________ Home Page _____________*/
 
@@ -100,10 +106,7 @@ th, td {
     padding: 15px;
 }
 
-.hero-img {
-    display: flex;
-    margin: auto;
-}
+/*_________________ Contact Page _____________*/
 
 .required-field::after {
     content: "*";
@@ -117,9 +120,13 @@ fieldset {
     box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.2);
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
+form label, textarea {
+    display: block;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     box-sizing: border-box;
     border: 1.5px solid #ccc;
     -webkit-transition: 0.5s;
@@ -137,11 +144,19 @@ input[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     padding: 10px 15px;
-    background-color: rgb(241, 211, 165);
+    background-color: red;
+    border: 1px solid white;
+    color: white;
     border: none;
     cursor: pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: red;
 }
 
 select {

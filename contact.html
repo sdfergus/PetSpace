@@ -10,47 +10,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <title>PetSpace</title>
 </head>
-<body>
-    <!-- Brand of website -->
-    <header>PetSpace Brand</header>
-    
+<body id="contact">
     <!-- Container to wrap everything -->
-    <div class="container">
-        <!-- Main navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="petList.html">Find a pet</a></li>
-                <li>Contact Us</li>
-            </ul>
-        </nav> <!-- End of main nav -->
+    <div id="container">
+        <!-- Brand of website -->
+            <header>
+                <div class="main-header">
+                    <div class="logo">
+                        <img src="/images/paw-logo-4.jpg" alt="PetSpace's Logo">
+                    </div>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="petList.html">Find a pet</a></li>
+                            <li class="active"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav> <!-- End of main nav -->
+                </div>
+            </header>
 
         <!-- Main content -->
         <main>
-            <div  class="img-repeat"></div>
+            <!-- <div  class="img-repeat"></div> -->
             <h1>Contact Us</h1>
             <hr width="50px" align="left">
             <p>We would love to hear from you!</p>
         
-            <form action="/contact.html">
+            <form action="/contact.html" method="post">
                 <fieldset>
-                    <label for="name" class="required-field"> Full name </label><br>
-                    <input type="text" id="name" required><br><br>
-                    <label for="email" class="required-field">Email </label><br>
-                    <input type="email" required><br><br>
-                    <label for="phone" class="required-field">Phone </label><br>
+                    <label for="name" class="required-field"> Full name </label>
+                    <input type="text" id="name" required>
+                    <label for="email" class="required-field">Email </label>
+                    <input type="email" required>
+                    <label for="phone" class="required-field">Phone </label>
                     <input type="tel" required>
-                    <br><br>
-
-                    <label for="contact">How should we contact you?</label><br>
+                    
+                    <label for="contact">How should we contact you?</label>
                     <select name="contact" id="contact">
                         <option value="email">Email</option>
                         <option value="phone">Phone</option>
                     </select>
-                    <br><br>
-                    <label for="message" class="required-field">Message: </label><br>
+                    
+                    <label for="message" class="required-field">Message: </label>
                     <textarea name="message" id="message" cols="50" rows="10" required></textarea>
-                    <br>
+                    
                     <input type="submit" value="Submit Message">
                 </fieldset>
             </form>
