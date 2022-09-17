@@ -41,63 +41,63 @@
             </div>
 
             <ul id="petGallery">
-                <!-- <li class="photo">
+                <!-- <li id="photo1">
                     <img src="https://placedog.net/300/300/0" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo2">
                     <img src="https://placedog.net/300/300/1" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo3">
                     <img src="https://placedog.net/300/300/2" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo4">
                     <img src="https://placedog.net/300/300/3" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo5">
                     <img src="https://placedog.net/300/300/4" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo6">
                     <img src="https://placedog.net/300/300/5" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo7">
                     <img src="https://placedog.net/300/300/6" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo8">
                     <img src="https://placedog.net/300/300/7" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
                 </li>
-                <li class="photo">
+                <li id="photo9">
                     <img src="https://placedog.net/300/300/8" alt="Dog image">
                     <h2 class="name">Name</h2>
                     <h3>Type</h3>
@@ -132,7 +132,7 @@
         var locationP = "<p>Location</p>"; //Declare variable to store pet location 
         var altName = "Dog image"; //Declare a variable to store alt name
 
-        var openListTag = "<li class='photo'>"; //Declare a variable to contain open list tag
+        var openListTag = "<li "; //Declare a variable to contain open list tag
         var closeListTag = "</li>"; //Declare a variable to contain close list tag
 
         var openNameTag = "<h2 class='name'>";
@@ -152,7 +152,7 @@
 
         for (var i = 0; i <= 11; i++) {
             imageNames.push("https://placedog.net/300/300/"+[i]); //Create image filename and store in array
-            photos.push("<img src=" + imageNames[i] + " " + altName + ">"); //Assemble file name into image element and store in an array 
+            photos.push("id=photo"+[i]+">" + "<img src=" + imageNames[i] + " " + altName + ">"); //Assemble file name into image element and store in an array 
             photo = openListTag + photos[i] + openNameTag + nameTexts[i] + closeNameTag + typeH3 + sexP + locationP + openDescTag + descTexts[i] + closeDescTag + closeListTag; //Assemble image element from array with list elements and store in a variable
             photoAlbum.push(photo); //Store(push) the assembled list codes into an array
         }
