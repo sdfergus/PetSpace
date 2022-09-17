@@ -41,7 +41,7 @@
             </div>
 
             <ul id="petGallery">
-                <li id="pet">
+                <!-- <li id="pet">
                     <img src="https://placedog.net/300/300/0" alt="Dog image">
                     <h2>Name</h2>
                     <h3>Type</h3>
@@ -103,86 +103,31 @@
                     <h3>Type</h3>
                     <p>Sex</p>
                     <p>Location</p>
-                </li>
+                </li> -->
             </ul>
-        <!-- <table align="center">
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="https://placedog.net/300/300/0" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Oakland, CA</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/1" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/2" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="https://placedog.net/300/300/3" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Oakland, CA</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/4" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/5" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="https://placedog.net/300/300/6" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Oakland, CA</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/7" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                    <td>
-                        <img src="https://placedog.net/300/300/8" alt="Dog image">
-                        <h2>Name</h2>
-                        <h3>Type</h3>
-                        <p>Sex</p>
-                        <p>Location</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
         </main> <!-- End of main content -->
 
     </div>   <!-- End container -->
 
     <!-- Footer info -->
     <footer>Made with ❤️ by Shandira <br> &copy; Copyright 2022</footer>
+
+    <script>
+        var photos = []; //Declare an empty array to store image element
+        var imageNames = []; //Declare an empty element to store image file names
+        var photoAlbum = []; //Declare an empty array to store html photos 
+
+        var photo; //Declare an empty variable to store the assembled image list codes
+        var nameH2 = "<h2>Name</h2>"; //Declare variable to store pet name
+        var typeH3 = "<h3>Type</h3>"; //Declare variable to store pet type 
+        var sexP = "<p>Sex</p>"; //Declare variable to store pet sex
+        var locationP = "<p>Location</p>"; //Declare variable to store pet location 
+        var altName = "Dog image"; //Declare a variable to store alt name
+
+        var openListTag = "<li id='pet'>"; //Declare a variable to contain open list tag
+        var closeListTag = "</li>"; //Declare a variable to contain close list tag
+
+        
+    </script>
 </body>
 </html>
