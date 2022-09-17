@@ -116,11 +116,11 @@
         var imageNames = []; //Declare an empty element to store image file names
         var photos = []; //Declare an empty array to store image element
         var photoAlbum = []; //Declare an empty array to store html photos 
-        // var namesH2 = [];
+        var namesH2 = ["Charlie", "Bruce", "Ron", "Sarah", "Max", "Emma", "Watson", "Essex", "Ron", "Princess", "Liz", "Bronx"];
         // var typesH3 = [];
         // var sexesP = [];
         // var locationsP = [];
-        var imageDescriptions = ["Description 1", "Description 2", "Description 3", "Description 4", "Description 5", "Description 6", "Description 7", "Description 8", "Description 9", "Description 10", "Description 11", "Description 12"]; //Descriptions for all dogs
+        var imageDescriptions = ["Charlie the Cutie", "Bruce Almighty", "Ron The Great", "Sarah Says So", "Max-A-Million", "Emma the Amazing", "Watson the Wizard", "Essex The Prince", "Ron-stoppable", "Princess Pretty", "Liz The Queen", "Bronx the King"]; //Descriptions for all dogs
 
 
         var photo; //Declare an empty variable to store the assembled image list codes
@@ -136,7 +136,7 @@
         for (var i = 0; i <= 11; i++) {
             imageNames.push("https://placedog.net/300/300/"+[i]); //Create image filename and store in array
             photos.push("<img src=" + imageNames[i] + " " + altName + ">"); //Assemble file name into image element and store in an array 
-            photo = openListTag + photos[i] + nameH2 + typeH3 + sexP + locationP + closeListTag; //Assemble image element from array with list elements and store in a variable
+            photo = openListTag + photos[i] + "<h2>" + namesH2[i] + "</h2>" + typeH3 + sexP + locationP + closeListTag; //Assemble image element from array with list elements and store in a variable
             photoAlbum.push(photo); //Store(push) the assembled list codes into an array
         }
 
