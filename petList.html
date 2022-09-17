@@ -113,8 +113,8 @@
     <footer>Made with ❤️ by Shandira <br> &copy; Copyright 2022</footer>
 
     <script>
-        var photos = []; //Declare an empty array to store image element
         var imageNames = []; //Declare an empty element to store image file names
+        var photos = []; //Declare an empty array to store image element
         var photoAlbum = []; //Declare an empty array to store html photos 
 
         var photo; //Declare an empty variable to store the assembled image list codes
@@ -127,7 +127,15 @@
         var openListTag = "<li id='pet'>"; //Declare a variable to contain open list tag
         var closeListTag = "</li>"; //Declare a variable to contain close list tag
 
-        
+        for (var i = 0; i <= 8; i++) {
+            imageNames.push("https://placedog.net/300/300/"+[i]); //Create image filename and store in array
+            photos.push("<img src=" + imageNames[i] + " " + altName + "'>' "); //Assemble file name into image element and store in an array 
+            photo = openListTag + photos[i] + nameH2 + typeH3 + sexP + locationP + closeListTag; //Assemble image element from array with list elements and store in a variable
+            photoAlbum.push(photo); //Store(push) the assembled list codes into an array
+        }
+
+        //Display all eight images stored in the array
+        document.getElementById("petGallery").innerHTML = photoAlbum.join(" ");
     </script>
 </body>
 </html>
