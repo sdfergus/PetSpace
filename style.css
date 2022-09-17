@@ -104,10 +104,11 @@ main {
 
 /*_________________ PetList Page _____________*/
 
-#petGallery li {
+#petGallery .photo {
     display: inline-block;
     text-decoration: none;
     margin: 10px;
+    cursor: pointer;
 }
 
 h1, .photo .name {
@@ -128,7 +129,12 @@ h1, .photo .name {
     text-align: center;
     font-weight: 600;
     padding-top: 25px;
+    visibility: hidden; /*will not be visible on the web page until mouse hover*/
 }
+
+#petGallery .photo:hover .description {
+    visibility: visible; /*Displays description over mouse hover*/      
+} 
 
 /*_________________ Contact Page _____________*/
 
