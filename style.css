@@ -104,13 +104,19 @@ main {
 
 /*_________________ PetList Page _____________*/
 
-h1, td h2 {
+#petGallery li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+h1, #pet h2 {
     font-family: 'Bubblegum Sans', cursive;
 }
 
-th, td {
+/* th, td {
     padding: 15px;
-}
+} */
 
 /*_________________ Contact Page _____________*/
 
