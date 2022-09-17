@@ -110,13 +110,25 @@ main {
     margin: 10px;
 }
 
-h1, #pet h2 {
+h1, .photo .name {
     font-family: 'Bubblegum Sans', cursive;
 }
 
-/* th, td {
-    padding: 15px;
-} */
+.photo {
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(225, 225, 225, 0.7);
+    text-align: center;
+    font-weight: 600;
+    padding-top: 25px;
+}
 
 /*_________________ Contact Page _____________*/
 
