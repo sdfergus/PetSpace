@@ -104,19 +104,16 @@ main {
 
 /*_________________ PetList Page _____________*/
 
-#petGallery .photo {
+#petGallery li {
     display: inline-block;
     text-decoration: none;
     margin: 10px;
     cursor: pointer;
-}
-
-h1, .photo .name {
-    font-family: 'Bubblegum Sans', cursive;
-}
-
-.photo {
     position: relative;
+}
+
+h1, li .name {
+    font-family: 'Bubblegum Sans', cursive;
 }
 
 .description {
@@ -132,7 +129,7 @@ h1, .photo .name {
     visibility: hidden; /*will not be visible on the web page until mouse hover*/
 }
 
-#petGallery .photo:hover .description {
+#petGallery li:hover .description {
     visibility: visible; /*Displays description over mouse hover*/      
 } 
 
