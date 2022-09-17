@@ -120,7 +120,7 @@
         // var typesH3 = [];
         // var sexesP = [];
         // var locationsP = [];
-        var imageDescriptions = ["Charlie the Cutie", "Bruce Almighty", "Ron The Great", "Sarah Says So", "Max-A-Million", "Emma the Amazing", "Watson the Wizard", "Essex The Prince", "Ron-stoppable", "Princess Pretty", "Liz The Queen", "Bronx the King"]; //Descriptions for all dogs
+        var imgDescriptions = ["Charlie the Cutie", "Bruce Almighty", "Ron The Great", "Sarah Says So", "Max-A-Million", "Emma the Amazing", "Watson the Wizard", "Essex The Prince", "Ron-stoppable", "Princess Pretty", "Liz The Queen", "Bronx the King"]; //Descriptions for all dogs
 
 
         var photo; //Declare an empty variable to store the assembled image list codes
@@ -133,10 +133,25 @@
         var openListTag = "<li class='photo'>"; //Declare a variable to contain open list tag
         var closeListTag = "</li>"; //Declare a variable to contain close list tag
 
+        var openNameTag = "<h2 class='name'>";
+        var closeNameTag = "</h2>"
+        
+        var openTypeTag = "<h2 class='type'>";
+        var closeTypeTag = "</h2>"
+        
+        var openSexTag = "<h2 class='sex'>";
+        var closeSexTag = "</h2>"
+        
+        var openLocationTag = "<h2 class='location'>";
+        var closeLocationTag = "</h2>"
+        
+        var openDescriptionTag = "<div class='description'>"
+        var closeDescriptionTag = "</div>";    
+
         for (var i = 0; i <= 11; i++) {
             imageNames.push("https://placedog.net/300/300/"+[i]); //Create image filename and store in array
             photos.push("<img src=" + imageNames[i] + " " + altName + ">"); //Assemble file name into image element and store in an array 
-            photo = openListTag + photos[i] + "<h2>" + namesH2[i] + "</h2>" + typeH3 + sexP + locationP + closeListTag; //Assemble image element from array with list elements and store in a variable
+            photo = openListTag + photos[i] + openNameTag + namesH2[i] + closeNameTag + typeH3 + sexP + locationP + closeListTag; //Assemble image element from array with list elements and store in a variable
             photoAlbum.push(photo); //Store(push) the assembled list codes into an array
         }
 
