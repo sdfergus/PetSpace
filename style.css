@@ -149,6 +149,7 @@ h1, li .name {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    visibility: hidden;
 }
 
 #info-box #pet-name {
@@ -157,7 +158,7 @@ h1, li .name {
     letter-spacing: 2px;
 }
 
-#info-box #pet-description {
+#info-box #more-info {
     font-size: 13px;
 }
 
@@ -167,6 +168,7 @@ h1, li .name {
     color: rgba(255, 255, 0, 0.8);
     text-align: center;
     padding: 15% 0;
+    cursor: pointer;
 }
 
 /*_________________ Contact Page _____________*/
