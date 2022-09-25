@@ -98,11 +98,15 @@ main {
 }
 
 /* Logo name */
-#space-font {
+#space-font, #info-box {
     font-family: 'Montserrat', sans-serif; 
 }
 
 /*_________________ PetList Page _____________*/
+
+#pet-gallery-container {
+    position: relative;
+}
 
 #petGallery li {
     display: inline-block;
@@ -132,6 +136,38 @@ h1, li .name {
 #petGallery li:hover .description {
     visibility: visible; /*Displays description over mouse hover*/      
 } 
+
+/* Info box */
+#info-box {
+    width: 35%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.3em 1.2em;
+    color: white;
+    border-radius: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info-box #pet-name {
+    /* font-weight: bold; */
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 2px;
+}
+
+#info-box #pet-description {
+    font-size: 13px;
+}
+
+#info-box #close-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 0, 0.8);
+    text-align: center;
+    padding: 15% 0;
+}
 
 /*_________________ Contact Page _____________*/
 
