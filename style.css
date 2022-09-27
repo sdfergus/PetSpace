@@ -233,6 +233,16 @@ select {
     background-color: #f1f1f1;
 }
 
+#email-input {
+    display: none;
+}
+
+#phone-input {
+    display: none;
+}
+
+/*_________________ Footer _____________*/
+
 footer {
     background-color: aliceblue;
     text-align: center;
