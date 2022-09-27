@@ -46,11 +46,19 @@
                     <input type="tel" required>
                     
                     <label for="contact">How should we contact you?</label>
-                    <select name="contact" id="contact">
-                        <option value="email">Email</option>
-                        <option value="phone">Phone</option>
+                    <select name="options" id="contact-options">
+                        <option value="">Select One</option>
+                        <option value="email" id="email">Email</option>
+                        <option value="phone" id="phone">Phone</option>
                     </select>
-                    
+                    <div id="email-input">
+                        <label for="email-input">Enter your email</label>
+                        <input type="text">
+                    </div>
+                    <div id="phone-input">
+                        <label for="phone-input">Enter your phone</label>
+                        <input type="tel">
+                    </div>
                     <label for="message" class="required-field">Message: </label>
                     <textarea name="message" id="message" cols="50" rows="10" required></textarea>
                     
