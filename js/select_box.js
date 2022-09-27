@@ -1,14 +1,20 @@
 var selectBox = document.getElementById('contact-options');
+var emailInputDiv = document.getElementById('email-input');
+var phoneInputDiv = document.getElementById('phone-input'); 
 
 selectBox.addEventListener('change', () => {
     if(selectBox.value === 'email') {
-        console.log('EMAIL SELECTED!');
-        //Make email div appear
+        //Make phone div disappear & email div appear
+        phoneInputDiv.style.display = "none";
+        emailInputDiv.style.display = "block";
     } else if (selectBox.value === 'phone') {
-        console.log('PHONE SELECTED!');
-        //Make phone div appear
+        //Make email div disappear & phone div appear
+        emailInputDiv.style.display = "none";
+        phoneInputDiv.style.display = "block";
     } else {
-        //Make div disappear
+        //SelectOne is chosen, make both divs disappear
+        emailInputDiv.style.display = "none";
+        phoneInputDiv.style.display = "none";
     }
 })
 
