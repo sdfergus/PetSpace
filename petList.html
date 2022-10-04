@@ -43,63 +43,63 @@
             <div id="pet-gallery-container">
                 <ul id="petGallery">
                     <!-- <li id="photo1">
-                        <img src="https://placedog.net/300/300/0" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo2">
-                        <img src="https://placedog.net/300/300/1" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo3">
-                        <img src="https://placedog.net/300/300/2" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo4">
-                        <img src="https://placedog.net/300/300/3" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo5">
-                        <img src="https://placedog.net/300/300/4" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo6">
-                        <img src="https://placedog.net/300/300/5" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo7">
-                        <img src="https://placedog.net/300/300/6" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo8">
-                        <img src="https://placedog.net/300/300/7" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2>Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
                         <p>Location</p>
                     </li>
                     <li id="photo9">
-                        <img src="https://placedog.net/300/300/8" alt="Dog image">
+                        <img src="https://placedog.net/300/300?id=x" alt="Dog image">
                         <h2 class="name">Name</h2>
                         <h3>Type</h3>
                         <p>Sex</p>
@@ -129,15 +129,15 @@
         var imageNames = []; //Declare an empty element to store image file names
         var photos = []; //Declare an empty array to store image element
         var photoAlbum = []; //Declare an empty array to store html photos 
-        var nameTexts = ["Charlie", "Bruce", "Ron", "Sarah", "Max", "Emma", "Watson", "Essex", "Ron", "Princess", "Liz", "Bronx"];
+        var nameTexts = ["Charlie", "Bruce", "Ron", "Sarah", "Max", "Emma", "Watson", "Essex", "Ron", "Preston", "Liz", "Bronx"];
         // var typesH3 = [];
         // var sexesP = [];
         // var locationsP = [];
-        var descTexts = ["Charlie the Cutie", "Bruce Almighty", "Ron The Great", "Sarah Says So", "Max-A-Million", "Emma the Amazing", "Watson the Wizard", "Essex The Prince", "Ron-stoppable", "Princess Pretty", "Liz The Queen", "Bronx the King"]; //Descriptions for all dogs
+        var descTexts = ["Charlie Coolz", "Bruce Almighty", "Ron The Great", "Sarah Says So", "Max-A-Million", "Emma the Amazing", "Watson the Wizard", "Essex The Prince", "Ron-stoppable", "Player Preston", "Liz The Queen", "Bronx the King"]; //Descriptions for all dogs
         var moreInfos = ["Charlie LOVES to be cuddle! So don't be stingy!", "Bruce is definitely strong and loves to play rough. Don't underestimate his strength!", "Ron's extra tip coming soon!", 
         "Sarah's extra tip coming soon!", "Max's extra tip coming soon!", "Emma's extra tip coming soon!", 
         "Watson's extra tip coming soon!", "Essex's extra tip coming soon!", "Ron's extra tip coming soon!", 
-        "Princess' extra tip coming soon!", "Liz's extra tip coming soon!", "Bronx's extra tip coming soon!"]
+        "Preston' extra tip coming soon!", "Liz's extra tip coming soon!", "Bronx's extra tip coming soon!"]
 
         var photo; //Declare an empty variable to store the assembled image list codes
         // var nameH2 = "<h2>Name</h2>"; //Declare variable to store pet name
@@ -165,7 +165,7 @@
         var closeDescTag = "</div>";    
 
         for (var i = 0; i <= 11; i++) {
-            imageNames.push("https://placedog.net/300/300/"+[i]); //Create image filename and store in array
+            imageNames.push("https://placedog.net/300/300?id="+[i+1*23]); //Create image filename w/ID and store in array (used 23 because it's my lucky number:)* ) 
             photos.push("id=photo"+[i]+">" + "<img src=" + imageNames[i] + " " + altName + ">"); //Assemble file name into image element and store in an array 
             photo = openListTag + photos[i] + openNameTag + nameTexts[i] + closeNameTag + typeH3 + sexP + locationP + openDescTag + descTexts[i] + closeDescTag + closeListTag; //Assemble image element from array with list elements and store in a variable
             photoAlbum.push(photo); //Store(push) the assembled list codes into an array  
